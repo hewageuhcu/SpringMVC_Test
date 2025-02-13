@@ -39,7 +39,7 @@ public class DBUtil {
                 int SALARY = rs.getInt("SALARY");
 
                 // Display the values
-                System.out.println("EMPID: " + EMP_ID + ", Fisrt Name: " + FIRST_NAME +
+                System.out.println("EMPID: " + EMP_ID + ", First Name: " + FIRST_NAME +
                         ", Last Name: " + LAST_NAME + ",Email: " + EMAIL +
                         ", Salary: " + SALARY);
             }
