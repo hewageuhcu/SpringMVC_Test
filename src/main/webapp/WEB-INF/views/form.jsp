@@ -9,7 +9,7 @@
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
 
-<h1 style="text-align: center; color: #333;">Employee Information ${api}</h1>
+<h1 style="text-align: center; color: #333;">${api}</h1>
 
 <form action="/submit" method="POST" style="max-width: 400px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
     <div style="margin-bottom: 15px;">
