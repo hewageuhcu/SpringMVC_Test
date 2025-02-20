@@ -52,20 +52,32 @@
     </dependency>
 
 
+    <!-- ======================   File handling ===================================== -->
+    <!-- Apache POI for Excel handling -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.3</version>
+    </dependency>
 
-      <!-- Apache POI for reading Excel -->
-      <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-ooxml</artifactId>
-        <version>5.2.3</version>
-      </dependency>
+    <!-- for apache poi vulnerability issues -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.14.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-compress</artifactId>
+      <version>1.26.0</version>
+    </dependency>
 
-      <!-- Required for .xlsx files -->
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-compress</artifactId>
-        <version>1.21</version>
-      </dependency>
+
 
 
   </dependencies>
