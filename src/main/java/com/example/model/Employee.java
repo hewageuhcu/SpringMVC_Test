@@ -1,4 +1,4 @@
-package com.example.modal;
+package com.example.model;
 
 public class Employee {
 }
