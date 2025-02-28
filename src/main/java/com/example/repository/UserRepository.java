@@ -54,11 +54,6 @@ public class UserRepository {
     @Transactional
     public boolean createUser(User User) {
         try {
-            if (User.getId() == null) {
-                logger.error("Cannot create User with null ID");
-                return false;
-            }
-
             logger.info("Creating new User with ID: {}", User.getId());
             entityManager.persist(User);
             entityManager.flush();
