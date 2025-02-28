@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -41,10 +40,19 @@ public class User {
     @Column(name = "email", nullable = false, length = 150)
     private String email;
 
-    @Column(name = "password", nullable = false, length = 255)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @Column(name = "active", nullable = false)
     private Boolean active = true;
 
+    // Static method to create a new user without setting ID
+    public static UserBuilder newUser() {
+        return builder().active(true);
+    }
+
+    // Helper method to check if entity is new (transient)
+    public boolean isNew() {
+        return this.id == null;
+    }
 }
